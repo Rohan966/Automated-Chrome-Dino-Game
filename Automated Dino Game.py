@@ -1,6 +1,5 @@
 import pyautogui # pip install pyautogui
 from PIL import Image, ImageGrab # pip install pillow
-# from numpy import asarray
 import time
 
 def hit(key):
@@ -9,14 +8,14 @@ def hit(key):
 
 def isCollide(data):
     # Draw the rectangle for birds
-    for i in range(300, 415):
-        for j in range(410, 563):
+    for i in range(310, 415):
+        for j in range(410, 583):
             if data[i, j] < 100:
                 hit("down")
                 return
 
-    for i in range(300, 415):
-        for j in range(563, 650):
+    for i in range(600, 415):
+        for j in range(863, 650):
             if data[i, j] < 100:
                 hit("up")
                 return
@@ -24,8 +23,8 @@ def isCollide(data):
 
 if __name__ == "__main__":
     print("Hey.. Dino game about to start in 3 seconds")
-    time.sleep(2)
-    # hit('up') 
+    time.sleep(3)
+    hit('up') 
 
     while True:
         image = ImageGrab.grab().convert('L')  
