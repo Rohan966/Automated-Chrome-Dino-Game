@@ -1,5 +1,5 @@
 import pyautogui # pip install pyautogui
-from PIL import Image, ImageGrab # pip install pillow
+from PIL import Image, ImageGrab # pip install pillow.
 import time
 
 def hit(key):
