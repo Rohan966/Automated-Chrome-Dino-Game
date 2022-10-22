@@ -7,7 +7,7 @@ def hit(key):
     return
 
 def isCollide(data):
-    # Draw the rectangle for birds
+    # Draw the rectangle for crows
     for i in range(310, 415):
         for j in range(410, 583):
             if data[i, j] < 100:
