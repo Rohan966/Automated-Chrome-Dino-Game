@@ -1,4 +1,4 @@
-import pyautogui # pip install pyautogui
+import pyautogui # pip install pyautogui.
 from PIL import Image, ImageGrab # pip install pillow.
 import time
 
